@@ -16,7 +16,7 @@
   <header>
     <nav class="navbar bg-codeworks text-light gap-2 px-2">
       <img src="./assets/img/logo.png" height="45" alt="" loading="lazy">
-      <div><b>gregslist_async</b></div>
+      <div><b>Gregslist Async</b></div>
       <!-- NOTE if using our authController, make sure this id is present somewhere in your HTML -->
       <div class="ms-auto" id="authstate"></div>
     </nav>
@@ -27,23 +27,76 @@
     <!-- TODO put houses container here! -->
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <div class="row bg-light shadow car-border" style="border-color: aqua;">
+        <div class="col-md-7">
+          <div class="bg-light shadow rounded p-3 mt-3">
+            <form>
+              <div class=" mb-3">
+                <label for="year">Year</label>
+                <input name="year" id="year" type="number" required placeholder="Input Year Here...">
+              </div>
+              <div class="mb-3">
+                <label for="price">Price</label>
+                <input name="price" id="price" type="number" required placeholder="Input Price Here...">
+              </div>
+              <div class="mb-3">
+                <label for="bedrooms">Bedrooms</label>
+                <input name="bedrooms" id="bedrooms" type="number" required placeholder="Input Bedrooms Here...">
+              </div>
+              <div class="mb-3">
+                <label for="bathrooms">Bathrooms</label>
+                <input name="bathrooms" id="bathrooms" type="number" required placeholder="Input Bathrooms Here...">
+              </div>
+              <div class="mb-3">
+                <label for="levels">Floors</label>
+                <input name="levels" id="levels" type="number" required placeholder="Input Floors Here...">
+              </div>
+              <div class="mb-3">
+                <label for="description">Description</label>
+                <input name="description" id="description" type="text" maxlength="5000"
+                  placeholder="Input Description Here...">
+              </div>
+              <div class="mb-3">
+                <label for="imgUrl">Image url</label>
+                <input name="imgUrl" id="imgUrl" type="url" maxlength="500" placeholder="Input Image Url Here...">
+              </div>
+              <div class="text-end">
+                <button class="btn btn-outline-danger me-2" type="reset">
+                  Reset Form
+                </button>
+                <button class="btn btn-outline-dark" type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <img class="car-form-img rounded"
+            src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="red house on a hill">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="houseCard" class="row">
+        <!-- STUB house template  -->
+        <!-- <div class="col-12">
+          <div class="row bg-light shadow car-border" style="border-color: black;">
             <div class="col-md-4 ps-0">
               <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Wienermobile-NAIAS-2005.jpg"
-                alt="Weiner mobile" class="img-fluid">
+                alt="Weiner mobile" class="car-img">
             </div>
             <div class="col-md-8">
               <div class="d-flex flex-column justify-content-between h-100">
                 <div>
-                  <p class="fs-3 mb-1">2024 Oscar Meyer Weiner Mobile</p>
+                  <p class="fs-3 mb-1">year price</p>
                   <small>Listed on 12/12/2020</small>
-                  <div class="d-flex mt-1 justify-content-between align-items-center">
-                    <p class="fs-3">$100001</p>
-                    <p class="fs-4">Engine: unknown</p>
+                  <div class="mt-1">
+                    <p class="fs-5">Bedrooms: </p>
+                    <p class="fs-5">Bathrooms:</p>
+                    <p class="fs-5">Floors:</p>
                   </div>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit recusandae sed sint voluptate
-                    eligendi molestiae consequuntur quibusdam iusto perferendis ad!</p>
+                  <p>description</p>
                 </div>
                 <div class="text-end mb-1">
                   <button class="btn btn-outline-danger">
@@ -53,7 +106,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 

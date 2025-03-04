@@ -44,10 +44,11 @@ export class HousesController {
 
   async deleteHouseListing(houseId) {
     try {
-      const confirmed = Pop.confirm('Are you sure you want to delete this house listing?', 'If you do it will be gone forever', 'yes', 'no')
+      const confirmed = await Pop.confirm('Are you sure you want to delete this house listing?', 'If you do it will be gone forever', 'yes', 'no')
       if (!confirmed) {
         return
       }
+
       await housesService.deleteHouse(houseId)
 
     } catch (error) {

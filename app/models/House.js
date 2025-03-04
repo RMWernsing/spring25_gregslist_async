@@ -15,6 +15,10 @@ export class House {
 
   }
 
+  get createdDate() {
+    return new Date(this.createdAt).toLocaleDateString()
+  }
+
   get houseCard() {
     return `
       <div class="col-12 mt-3">
@@ -27,7 +31,7 @@ export class House {
         <div class="d-flex flex-column justify-content-between h-100">
           <div>
             <p class="fs-3 mb-1">${this.year} $${this.price.toLocaleString()}</p>
-            <small>Listed on ${this.createdAt}</small>
+            <small>Listed on ${this.createdDate}</small>
             <div class="mt-1">
               <p class="fs-5">Bedrooms: ${this.bedrooms}</p>
               <p class="fs-5">Bathrooms: ${this.bathrooms}</p>

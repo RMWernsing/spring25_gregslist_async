@@ -29,10 +29,10 @@
       <div class="row">
         <div class="col-md-7">
           <div class="bg-light shadow rounded p-3 mt-3">
-            <form>
+            <form onsubmit="app.housesController.createHouseListing()">
               <div class=" mb-3">
                 <label for="year">Year</label>
-                <input name="year" id="year" type="number" required placeholder="Input Year Here...">
+                <input name="year" id="year" type="number" max="2030" required placeholder="Input Year Here...">
               </div>
               <div class="mb-3">
                 <label for="price">Price</label>
@@ -40,15 +40,17 @@
               </div>
               <div class="mb-3">
                 <label for="bedrooms">Bedrooms</label>
-                <input name="bedrooms" id="bedrooms" type="number" required placeholder="Input Bedrooms Here...">
+                <input name="bedrooms" id="bedrooms" type="number" max="1000" required
+                  placeholder="Input Bedrooms Here...">
               </div>
               <div class="mb-3">
                 <label for="bathrooms">Bathrooms</label>
-                <input name="bathrooms" id="bathrooms" type="number" required placeholder="Input Bathrooms Here...">
+                <input name="bathrooms" id="bathrooms" type="number" max="1000" required
+                  placeholder="Input Bathrooms Here...">
               </div>
               <div class="mb-3">
                 <label for="levels">Floors</label>
-                <input name="levels" id="levels" type="number" required placeholder="Input Floors Here...">
+                <input name="levels" id="levels" type="number" max="1000" required placeholder="Input Floors Here...">
               </div>
               <div class="mb-3">
                 <label for="description">Description</label>

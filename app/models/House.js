@@ -40,7 +40,7 @@ export class House {
                 <span>${this.creator.name}</span>
               </div>
           <div class="text-end mb-1">
-            <button class="btn btn-outline-danger">
+            <button onclick="app.housesController.deleteHouseListing('${this.id}')" class="btn btn-outline-danger">
               Delete House
             </button>
           </div>
